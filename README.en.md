@@ -84,11 +84,19 @@ Main parameters can be changed at the beginning of the `server.js` file:
 This project is distributed under the MIT License. See the `LICENSE` file.
 
 　　　 　　／＞　　フ
+
 　　　 　　| 　_　 _ l
+
 　 　　 　／` ミ＿xノ
+
 　　 　 /　　　 　 |
+
 　　　 /　 ヽ　　 ﾉ
+
 　 　 │　　|　|　|
+
 　／￣|　　 |　|　|
+
 　| (￣ヽ＿ヽ)__)
+
 　＼二つ
