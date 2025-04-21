@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+    --primary: #0d1117;
+    --secondary: #161b22;
+    --accent: #58a6ff;
+    --text: #c9d1d9;
+    --highlight: #1f6feb;
+    --success: #2ea043;
+    --warning: #d29922;
+    --error: #f85149;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--primary);
+    color: var(--text);
+    overflow-x: hidden;
+    position: relative;
+}
+
+.cyber-border {
+    border: 1px solid var(--highlight);
+    box-shadow: 0 0 10px rgba(31, 111, 235, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.cyber-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(31, 111, 235, 0.2);
+    pointer-events: none;
+}
+
+.cyber-border:hover {
+    box-shadow: 0 0 20px rgba(31, 111, 235, 0.8);
+    transform: translateY(-1px);
+}
+
+.cyber-glow {
+    text-shadow: 0 0 5px var(--accent);
+    animation: pulse 2s infinite;
+}
+
+.cyber-btn {
+    background: linear-gradient(145deg, var(--secondary), var(--highlight));
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(31, 111, 235, 0.3);
+}
+
+.cyber-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.cyber-btn:hover::before {
+    left: 100%;
+}
+
+.cyber-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(31, 111, 235, 0.4);
+    border-color: rgba(31, 111, 235, 0.6);
+}
+
+.terminal {
+    background-color: rgba(13, 17, 23, 0.8);
+    border: 1px solid var(--highlight);
+    font-family: 'Share Tech Mono', monospace;
+    overflow-y: auto;
+    max-height: 200px;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(31, 111, 235, 0.2);
+}
+
+.terminal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(31, 111, 235, 0.2), transparent);
+}
+
+.terminal-line {
+    animation: typing 0.5s steps(40, end);
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid rgba(31, 111, 235, 0.2);
+    margin-left: 5px;
+}
+
+.terminal-line::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+/* Starfield Animation */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle var(--duration) infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
+
+/* Scanline Effect */
+.scanline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(0, 0, 0, 0.1) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 0;
+    pointer-events: none;
+    animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+/* Content container with semi-transparent background */
+.content-container {
+    background-color: rgba(13, 17, 23, 0.85);
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--highlight);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+/* Input focus effects */
+input, select {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(31, 111, 235, 0.2);
+}
+
+input:hover, select:hover {
+    border-color: rgba(31, 111, 235, 0.4);
+}
+
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent);
+    border-color: var(--accent);
+}
+
+/* Custom checkbox style */
+input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(31, 111, 235, 0.4);
+    border-radius: 3px;
+    background: var(--secondary);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--highlight);
+    border-color: var(--accent);
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+}
+
+/* Status indicators with pulse effect */
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+}
+
+.status-indicator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.status-active::after {
+    background-color: var(--success);
+    box-shadow: 0 0 5px var(--success);
+}
+
+.status-warning::after {
+    background-color: var(--warning);
+    box-shadow: 0 0 5px var(--warning);
+}
+
+.status-error::after {
+    background-color: var(--error);
+    box-shadow: 0 0 5px var(--error);
+}
+
+/* Tooltip style */
+[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: rgba(13, 17, 23, 0.9);
+    color: var(--text);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    border: 1px solid var(--highlight);
+    box-shadow: 0 0 10px rgba(31, 111, 235, 0.3);
+}
+
+/* Loading animation */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+} 
