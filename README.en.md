@@ -6,7 +6,7 @@
 
 CyberTube DL Web is a web interface for the popular `yt-dlp` utility, allowing you to download video and audio from YouTube via your browser. The application runs locally on your computer and is accessible via a web browser to you and other devices on your local network.
 
-![image](https://github.com/user-attachments/assets/01a204ed-67f7-4c6f-8b3f-b20b5c1f7f15)
+![image](https://github.com/user-attachments/assets/a4d9dbc2-5d2e-41b4-a5ef-08b901eed7f9)
 
 ## ✨ Features
 
