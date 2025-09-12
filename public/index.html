@@ -124,183 +124,182 @@
   <!-- Фон -->
   <div id="starfield"></div>
 
-  <div class="container mx-auto px-4 py-8 content-container">
-    <!-- Header -->
-    <header class="flex justify-between items-center mb-8 cyber-border p-4 rounded-lg fade-in">
-      <div class="flex items-center space-x-4">
-        <a href="https://github.com/SparkleSavvy/CyberTube-DL" target="_blank">
-          <i class="fab fa-github text-3xl text-purple-400 hover:text-purple-300 transition-colors"></i>
-        </a>
-        <h1 class="text-3xl font-bold glitch">CyberTube DL</h1>
-      </div>
-      <div class="flex items-center space-x-2">
-        <a href="https://github.com/SparkleSavvy/CyberTube-DL"
-           class="hidden sm:flex items-center px-3 py-1 bg-gray-800/60 hover:bg-gray-700 rounded-full text-xs">
-          <i class="fab fa-github mr-1.5"></i>
-          <span>GitHub</span>
-        </a>
-        <span class="px-3 py-1 bg-purple-800/60 rounded-full text-xs">v1.0.2 RC2</span>
-        <span class="px-3 py-1 bg-blue-800/60 rounded-full text-xs">yt-dlp</span>
-      </div>
-    </header>
+    <div class="container mx-auto px-4 py-8 content-container">
+		<!-- Header -->
+		<header class="flex justify-between items-center mb-8 cyber-border p-4 rounded-lg fade-in">
+		<div class="flex items-center space-x-4">
+				<a href="https://github.com/SparkleSavvy/CyberTube-DL" target="_blank">
+					<i class="fab fa-github text-3xl text-purple-400 hover:text-purple-300 transition-colors"></i>
+				</a>
+			<h1 class="text-3xl font-bold glitch">CyberTube DL</h1>
+		</div>
+			<div class="flex items-center space-x-2">
+			<a href="https://github.com/SparkleSavvy/CyberTube-DL"
+				class="hidden sm:flex items-center px-3 py-1 bg-gray-800/60 hover:bg-gray-700 rounded-full text-xs">
+				<i class="fab fa-github mr-1.5"></i>
+				<span>GitHub</span>
+			</a>
+				<span class="px-3 py-1 bg-purple-800/60 rounded-full text-xs">v1.0.2 RC2</span>
+				<span class="px-3 py-1 bg-blue-800/60 rounded-full text-xs">yt-dlp</span>
+			</div>
+		</header>
 
     <!-- Main -->
     <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 fade-in">
       <!-- Input Section -->
-      <div class="lg:col-span-2 rounded-lg cyber-border p-6 space-y-6">
+        <div class="lg:col-span-2 rounded-lg cyber-border p-6 space-y-6">
         <!-- URL input -->
         <div>
-          <label for="url" class="block text-sm font-medium mb-2 text-blue-400">YouTube URL</label>
-          <div class="flex space-x-2">
-            <input type="text" id="url" placeholder="https://www.youtube.com/watch?v=..."
-                   class="flex-grow px-4 py-2 rounded"/>
-            <button id="fetchBtn" class="px-4 py-2 cyber-btn rounded text-white flex-shrink-0">
-              <i class="fas fa-search mr-2"></i> Fetch
-            </button>
-          </div>
+            <label for="url" class="block text-sm font-medium mb-2 text-blue-400">YouTube URL</label>
+            <div class="flex space-x-2">
+            <input type="text" id="url" placeholder="https://www.youtube.com/watch?v=..." class="flex-grow px-4 py-2 rounded"/>
+                <button id="fetchBtn" class="px-4 py-2 cyber-btn rounded text-white flex-shrink-0">
+					<i class="fas fa-search mr-2"></i> Fetch
+                </button>
+            </div>
         </div>
 
                 <!-- === Options Block === -->
-                <div class="mb-6">
-                    <label class="block text-sm font-medium mb-2 text-blue-400">Options</label>
+	<div class="mb-6">
+    <label class="block text-sm font-medium mb-2 text-blue-400">Options</label>
 
-                    <!-- Quality / Format Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label for="quality" class="block text-xs mb-1">Quality</label> <!-- Добавил for -->
-                            <select id="quality" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="320kbps/720p">320kbps / 720p</option>
-                                <option value="320kbps/1080p">320kbps / 1080p</option>
-                                <option value="320kbps/1440p">320kbps / 1440p</option>
-                                <option value="320kbps/2160p">320kbps / 2160p</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="format" class="block text-xs mb-1">Format</label> <!-- Добавил for -->
-                            <select id="format" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <option value="mp4">MP4</option>
-                                <option value="mp3">MP3</option>
-                                <!-- Убрал MKV, т.к. его не было в коде JS, можно вернуть если нужно -->
-                            </select>
-                        </div>
-                    </div>
-                    <!-- End Quality / Format Grid -->
+    <!-- Quality / Format Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+            <label for="quality" class="block text-xs mb-1">Quality</label> <!-- Добавил for -->
+            <select id="quality" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="320kbps/720p">320kbps / 720p</option>
+                <option value="320kbps/1080p">320kbps / 1080p</option>
+                <option value="320kbps/1440p">320kbps / 1440p</option>
+                <option value="320kbps/2160p">320kbps / 2160p</option>
+            </select>
+        </div>
+        <div>
+            <label for="format" class="block text-xs mb-1">Format</label> <!-- Добавил for -->
+            <select id="format" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="mp4">MP4</option>
+                <option value="mp3">MP3</option>
+                <!-- Убрал MKV, т.к. его не было в коде JS, можно вернуть если нужно -->
+            </select>
+        </div>
+    </div>
+    <!-- End Quality / Format Grid -->
 
                     <!-- Playlist Checkbox -->
-                    <div class="flex items-center mb-4"> <!-- <<< ПРАВИЛЬНОЕ МЕСТО ДЛЯ ПЛЕЙЛИСТА -->
-                        <input type="checkbox" id="playlist" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500">
-                        <label for="playlist" class="ml-2 text-sm">Download Playlist</label>
-                    </div>
-                    <!-- End Playlist Checkbox -->
+	<div class="flex items-center mb-4"> <!-- <<< ПРАВИЛЬНОЕ МЕСТО ДЛЯ ПЛЕЙЛИСТА -->
+		<input type="checkbox" id="playlist" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500">
+		<label for="playlist" class="ml-2 text-sm">Download Playlist</label>
+	</div>
+	<!-- End Playlist Checkbox -->
 
                     <!-- Кнопка/ссылка для Advanced Options -->
-                    <div class="mt-4">
-                        <button id="toggleAdvancedOptions" type="button" class="text-sm text-blue-400 hover:text-blue-300 focus:outline-none">
-                            Advanced Options <span id="advancedOptionsArrow">▼</span>
-                        </button>
-                    </div>
+    <div class="mt-4">
+        <button id="toggleAdvancedOptions" type="button" class="text-sm text-blue-400 hover:text-blue-300 focus:outline-none">
+            Advanced Options <span id="advancedOptionsArrow">▼</span>
+        </button>
+    </div>
 
                     <!-- Контейнер для Advanced Options (скрыт по умолчанию) -->
-                    <div id="advancedOptionsContainer" class="hidden mt-4 border-t border-gray-700 pt-4">
-                        <!-- SponsorBlock -->
-                        <h4 class="text-lg text-blue-400 mb-3 font-semibold border-b border-blue-900 pb-1">SponsorBlock</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm mb-4">
-                            <div>
-                                <label class="block mb-1 font-medium text-gray-300">Remove Segments:</label>
-                                <div class="space-y-1 pl-2">
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_sponsor" value="sponsor" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_sponsor" class="ml-2">Sponsor</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_intro" value="intro" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_intro" class="ml-2">Intro</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_outro" value="outro" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_outro" class="ml-2">Outro</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_selfpromo" value="selfpromo" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_selfpromo" class="ml-2">Self-promotion</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_preview" value="preview" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_preview" class="ml-2">Preview/Recap</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_filler" value="filler" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_filler" class="ml-2">Filler Tangent</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_interaction" value="interaction" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_interaction" class="ml-2">Interaction Reminder</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_remove_music_offtopic" value="music_offtopic" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_music_offtopic" class="ml-2">Music Offtopic</label></div>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="block mb-1 font-medium text-gray-300">Mark Segments (as chapters):</label>
-                                <div class="space-y-1 pl-2">
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_sponsor" value="sponsor" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_sponsor" class="ml-2">Sponsor</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_intro" value="intro" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_intro" class="ml-2">Intro</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_outro" value="outro" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_outro" class="ml-2">Outro</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_selfpromo" value="selfpromo" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_selfpromo" class="ml-2">Self-promotion</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_preview" value="preview" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_preview" class="ml-2">Preview/Recap</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_interaction" value="interaction" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_interaction" class="ml-2">Interaction Reminder</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_music_offtopic" value="music_offtopic" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_music_offtopic" class="ml-2">Music Offtopic</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_poi_highlight" value="poi_highlight" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_poi_highlight" class="ml-2">Point of Interest</label></div>
-                                    <div class="flex items-center"><input type="checkbox" id="sb_mark_chapter" value="chapter" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_chapter" class="ml-2">Exclusive Chapter</label></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End SponsorBlock -->
+    <div id="advancedOptionsContainer" class="hidden mt-4 border-t border-gray-700 pt-4">
+        <!-- SponsorBlock -->
+        <h4 class="text-lg text-blue-400 mb-3 font-semibold border-b border-blue-900 pb-1">SponsorBlock</h4>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2 text-sm mb-4">
+            <div>
+                <label class="block mb-1 font-medium text-gray-300">Remove Segments:</label>
+                <div class="space-y-1 pl-2">
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_sponsor" value="sponsor" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_sponsor" class="ml-2">Sponsor</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_intro" value="intro" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_intro" class="ml-2">Intro</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_outro" value="outro" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_outro" class="ml-2">Outro</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_selfpromo" value="selfpromo" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_selfpromo" class="ml-2">Self-promotion</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_preview" value="preview" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_preview" class="ml-2">Preview/Recap</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_filler" value="filler" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_filler" class="ml-2">Filler Tangent</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_interaction" value="interaction" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_interaction" class="ml-2">Interaction Reminder</label></div>
+                    <div class="flex items-center"><input type="checkbox" id="sb_remove_music_offtopic" value="music_offtopic" class="sb-remove w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_remove_music_offtopic" class="ml-2">Music Offtopic</label></div>
+				</div>
+            </div>
+            <div>
+                <label class="block mb-1 font-medium text-gray-300">Mark Segments (as chapters):</label>
+                    <div class="space-y-1 pl-2">
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_sponsor" value="sponsor" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_sponsor" class="ml-2">Sponsor</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_intro" value="intro" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_intro" class="ml-2">Intro</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_outro" value="outro" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_outro" class="ml-2">Outro</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_selfpromo" value="selfpromo" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_selfpromo" class="ml-2">Self-promotion</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_preview" value="preview" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_preview" class="ml-2">Preview/Recap</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_interaction" value="interaction" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_interaction" class="ml-2">Interaction Reminder</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_music_offtopic" value="music_offtopic" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_music_offtopic" class="ml-2">Music Offtopic</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_poi_highlight" value="poi_highlight" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_poi_highlight" class="ml-2">Point of Interest</label></div>
+                        <div class="flex items-center"><input type="checkbox" id="sb_mark_chapter" value="chapter" class="sb-mark w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sb_mark_chapter" class="ml-2">Exclusive Chapter</label></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End SponsorBlock -->
 
-                        <!-- Subtitles -->
-                        <h4 class="text-lg text-blue-400 mt-4 mb-3 font-semibold border-b border-blue-900 pb-1">Subtitles</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3 text-sm mb-4">
-                            <div class="space-y-1">
-                                <label class="block mb-1 font-medium text-gray-300">Download Types:</label>
-                                <div class="flex items-center pl-2"><input type="checkbox" id="sub_type_manual" value="manual" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sub_type_manual" class="ml-2">Manual (User-created)</label></div>
-                                <div class="flex items-center pl-2"><input type="checkbox" id="sub_type_auto" value="auto" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sub_type_auto" class="ml-2">Auto-generated</label></div>
-                            </div>
-                            <div>
-                                <label for="sub_langs" class="block mb-1 font-medium text-gray-300">Languages (comma-sep):</label>
-                                <input type="text" id="sub_langs" placeholder="en,ru,ja,es" class="w-full px-3 py-1.5 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs">
-                                <p class="text-xs text-gray-500 mt-1">Default: en,ru. Use 'all' for all.</p>
-                            </div>
-                            <div>
-                                <label for="sub_format" class="block mb-1 font-medium text-gray-300">Convert to Format:</label>
-                                <select id="sub_format" class="w-full px-3 py-1.5 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs">
-                                    <option value="best">Keep Original (best)</option>
-                                    <option value="srt">SRT</option>
-                                    <option value="vtt">VTT</option>
-                                    <option value="ass">ASS</option>
-                                    <option value="lrc">LRC</option>
-                                </select>
-                                <p class="text-xs text-gray-500 mt-1">Requires FFmpeg for conversion.</p>
-                            </div>
-                        </div>
-                        <!-- End Subtitles -->
+	<!-- Subtitles -->
+	<h4 class="text-lg text-blue-400 mt-4 mb-3 font-semibold border-b border-blue-900 pb-1">Subtitles</h4>
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-3 text-sm mb-4">
+		<div class="space-y-1">
+			<label class="block mb-1 font-medium text-gray-300">Download Types:</label>
+			<div class="flex items-center pl-2"><input type="checkbox" id="sub_type_manual" value="manual" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sub_type_manual" class="ml-2">Manual (User-created)</label></div>
+			<div class="flex items-center pl-2"><input type="checkbox" id="sub_type_auto" value="auto" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500"><label for="sub_type_auto" class="ml-2">Auto-generated</label></div>
+		</div>
+		<div>
+			<label for="sub_langs" class="block mb-1 font-medium text-gray-300">Languages (comma-sep):</label>
+			<input type="text" id="sub_langs" placeholder="en,ru,ja,es" class="w-full px-3 py-1.5 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs">
+			<p class="text-xs text-gray-500 mt-1">Default: en,ru. Use 'all' for all.</p>
+		</div>
+    <div>
+        <label for="sub_format" class="block mb-1 font-medium text-gray-300">Convert to Format:</label>
+        <select id="sub_format" class="w-full px-3 py-1.5 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs">
+				<option value="best">Keep Original (best)</option>
+				<option value="srt">SRT</option>
+				<option value="vtt">VTT</option>
+				<option value="ass">ASS</option>
+				<option value="lrc">LRC</option>
+			</select>
+			<p class="text-xs text-gray-500 mt-1">Requires FFmpeg for conversion.</p>
+		</div>
+    </div>
+    <!-- End Subtitles -->
 
-                        <!-- Output & Filesystem -->
-                        <h4 class="text-lg text-blue-400 mt-4 mb-3 font-semibold border-b border-blue-900 pb-1">Output & Filesystem</h4>
-                              
-                        <!-- Место для настроек архива и имени файла -->
-                        <div class="text-sm mb-4 space-y-3">
-                            <div class="flex items-center">
-                                <input type="checkbox" id="use_archive" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500">
-                                <label for="use_archive" class="ml-2">Use Download Archive (skip downloaded)</label>
-                            </div>
-                            <p class="text-xs text-gray-500 pl-6">Requires server restart if enabled/disabled after first use. Archive file: download_archive.txt</p>
-                            <!-- Шаблон имени файла -->
-                            <div>
-                                <label for="output_template" class="block mb-1 font-medium text-gray-300">Filename Template (-o):</label>
-                                <input type="text" id="output_template"
-                                       placeholder="%(title)s [%(id)s].%(ext)s"
-                                       class="w-full px-3 py-1.5 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs font-mono"> <!-- Добавил font-mono -->
-                                <p class="text-xs text-gray-500 mt-1">Leave blank for default. See <a href="https://github.com/yt-dlp/yt-dlp#output-template" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">yt-dlp docs</a> for syntax.</p>
-                            </div>
-                        </div>
-                        <!-- End Output & Filesystem -->
+        <!-- Output & Filesystem -->
+        <h4 class="text-lg text-blue-400 mt-4 mb-3 font-semibold border-b border-blue-900 pb-1">Output & Filesystem</h4>
+              
+        <!-- Место для настроек архива и имени файла -->
+        <div class="text-sm mb-4 space-y-3">
+            <div class="flex items-center">
+                <input type="checkbox" id="use_archive" class="w-4 h-4 text-blue-600 bg-gray-700 border-gray-600 rounded focus:ring-blue-500">
+                <label for="use_archive" class="ml-2">Use Download Archive (skip downloaded)</label>
+            </div>
+            <p class="text-xs text-gray-500 pl-6">Requires server restart if enabled/disabled after first use. Archive file: download_archive.txt</p>
+            <!-- Шаблон имени файла -->
+            <div>
+                <label for="output_template" class="block mb-1 font-medium text-gray-300">Filename Template (-o):</label>
+                <input type="text" id="output_template"
+                       placeholder="%(title)s [%(id)s].%(ext)s"
+                       class="w-full px-3 py-1.5 bg-gray-800 border border-gray-700 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs font-mono"> <!-- Добавил font-mono -->
+                <p class="text-xs text-gray-500 mt-1">Leave blank for default. See <a href="https://github.com/yt-dlp/yt-dlp#output-template" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">yt-dlp docs</a> for syntax.</p>
+            </div>
+        </div>
+        <!-- End Output & Filesystem -->
 
-                        <!-- Embedding -->
-                        <h4 class="text-lg text-blue-400 mt-4 mb-3 font-semibold border-b border-blue-900 pb-1">Embedding</h4>
-                        <!-- Место для настроек встраивания -->
-                         <div class="text-sm mb-4">
-                            <!-- Сюда добавим чекбоксы встраивания -->
-                            <p class="text-gray-500">(Embedding options coming soon...)</p>
-                        </div>
-                        <!-- End Embedding -->
+        <!-- Embedding -->
+        <h4 class="text-lg text-blue-400 mt-4 mb-3 font-semibold border-b border-blue-900 pb-1">Embedding</h4>
+        <!-- Место для настроек встраивания -->
+         <div class="text-sm mb-4">
+            <!-- Сюда добавим чекбоксы встраивания -->
+            <p class="text-gray-500">(Embedding options coming soon...)</p>
+        </div>
+        <!-- End Embedding -->
 
-                    </div> <!-- Конец advancedOptionsContainer -->
+    </div> <!-- Конец advancedOptionsContainer -->
 
-                </div> <!-- Конец Options Block -->
+</div> <!-- Конец Options Block -->
 
         <!-- Download button -->
         <button id="downloadBtn" class="w-full px-4 py-3 cyber-btn rounded text-white font-bold">
-          <i class="fas fa-download mr-2"></i> Download
+            <i class="fas fa-download mr-2"></i> Download
         </button>
-      </div>
+    </div>
 
       <!-- Preview -->
     <div class="rounded-lg cyber-border p-6">
@@ -325,32 +324,32 @@
     </div>
 
       <!-- Terminal -->
-      <div class="lg:col-span-3 rounded-lg cyber-border p-4">
-        <div class="flex items-center justify-between mb-2">
-          <div class="flex items-center space-x-2">
-            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-          </div>
-          <span class="text-sm text-blue-400">TERMINAL OUTPUT</span>
-          <button id="clearTerminal" class="text-xs text-gray-400 hover:text-white">
-            <i class="fas fa-trash-alt mr-1"></i> Clear
-          </button>
+        <div class="lg:col-span-3 rounded-lg cyber-border p-4">
+			<div class="flex items-center justify-between mb-2">
+				<div class="flex items-center space-x-2">
+				<div class="w-3 h-3 rounded-full bg-red-500"></div>
+				<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+				<div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <span class="text-sm text-blue-400">TERMINAL OUTPUT</span>
+            <button id="clearTerminal" class="text-xs text-gray-400 hover:text-white">
+				<i class="fas fa-trash-alt mr-1"></i> Clear
+            </button>
         </div>
-        <div id="terminal" class="terminal p-3 text-sm h-48 overflow-y-auto"></div>
-      </div>
+			<div id="terminal" class="terminal p-3 text-sm h-48 overflow-y-auto"></div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer class="mt-8 text-xs text-gray-400 flex justify-between items-center fade-in">
-      <div>
-        <span id="status" class="text-blue-400">Status: Ready</span>
-        <span id="progress" class="ml-4 hidden">Progress: <span id="progressValue">0</span>%</span>
-      </div>
-      <div>
-        <span class="mr-2">Connection: <span id="connectionStatusText" class="text-yellow-400">Connecting...</span></span>
-        <span>API: <span id="apiStatusText" class="text-yellow-400">Connecting...</span></span>
-      </div>
+        <div>
+			<span id="status" class="text-blue-400">Status: Ready</span>
+			<span id="progress" class="ml-4 hidden">Progress: <span id="progressValue">0</span>%</span>
+        </div>
+        <div>
+			<span class="mr-2">Connection: <span id="connectionStatusText" class="text-yellow-400">Connecting...</span></span>
+			<span>API: <span id="apiStatusText" class="text-yellow-400">Connecting...</span></span>
+        </div>
     </footer>
 
         <script>
