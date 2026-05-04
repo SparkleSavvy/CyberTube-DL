@@ -3,8 +3,10 @@
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/) [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/) [![yt-dlp](https://img.shields.io/badge/yt--dlp-8A2BE2?style=for-the-badge&logo=youtube&logoColor=white)](https://github.com/yt-dlp/yt-dlp) [![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white)](https://ffmpeg.org/) [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)]() [![License: ISC](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 > [!IMPORTANT]
-> В скором времени поддержка и разработка этого проекта будут прекращены; он будет перенесен в архив. Разработка будет продолжена тут: [SparkleSavvy/Flow](https://github.com/SparkleSavvy/Flow)!
-> This project will soon cease to be supported and developed; it will be archived. Development will continue here: [SparkleSavvy/Flow](https://github.com/SparkleSavvy/Flow)!
+> ENG: This project will soon cease to be supported and developed; it will be archived. Development will continue here: [SparkleSavvy/Flow](https://github.com/SparkleSavvy/Flow)!
+
+> [!IMPORTANT]
+> RUS: В скором времени поддержка и разработка этого проекта будут прекращены; он будет перенесен в архив. Разработка будет продолжена тут: [SparkleSavvy/Flow](https://github.com/SparkleSavvy/Flow)!
 
 CyberTube DL Web - это веб-интерфейс для популярной утилиты `yt-dlp`, позволяющий скачивать видео и аудио с YouTube через браузер. Приложение работает локально на вашем компьютере и доступно через веб-браузер вам и другим устройствам в вашей локальной сети.
 
